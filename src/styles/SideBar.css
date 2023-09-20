@@ -1,4 +1,21 @@
-.sidebar {
+
+.sidebar { 
     background-color: white;
-    width: 300px;
+    width: 240px;
+    height: 600px;
+    border-radius: 10px;
+    text-align: center;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+h1 {
+    font-size: 30px;
+    font-family: 'Lato', sans-serif;
+    width: 100px;
+}
+img {
+    width: 100px;
 }

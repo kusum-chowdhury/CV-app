@@ -1,10 +1,12 @@
 import React from 'react'
 
-function Geninfo() {
+
+function Geninfo(props) {
+
   return (
     <div className='genInfo'>
        <h3>General Info</h3>
-      <p>Name</p>
+       <p>{props.name}</p>
       <p>email</p>
       <p>Phone number</p>
     </div>

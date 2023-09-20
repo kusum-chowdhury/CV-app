@@ -1,9 +1,13 @@
 import React from 'react'
 import '../styles/InputField.css'
+import InputGenInfo from './InputGenInfo'
 
 function InputField() {
   return (
-    <div className='inputs'>InputField</div>
+    <div className='inputs'>
+      <h1>Input Field</h1>
+        {/* <InputGenInfo /> */}
+    </div>
   )
 }
 
