@@ -1,10 +1,10 @@
 import React from 'react'
-import '../styles/InputGenInfo.css'
+
 
 function InputGenInfo() {
 
   return (
-    <div className='input-general-info'>
+    <div className='input-general-info input-field'>
       <h3>General Informations</h3>
       <form>
       <label for="name">Full Name</label>
