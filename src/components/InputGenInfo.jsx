@@ -1,17 +1,19 @@
 import React from 'react'
-
+import '../styles/InputGenInfo.css'
 
 function InputGenInfo() {
 
   return (
-    <div>
-
-        <label htmlFor="name">Name</label>
-        <input type="text" id='name' onChange={changeName}/>
-        <label htmlFor="email">Email</label>
-        <input type="text" id='email'/>
-        <label htmlFor="phone-no">Phone no</label>
-        <input type="text" id='phone-no'/>
+    <div className='input-general-info'>
+      <h3>General Informations</h3>
+      <form>
+      <label for="name">Full Name</label>
+      <input id="name" name="name" type="text" placeholder='Enter your full name' />
+      <label for="email">Email Address</label>
+      <input id='email' type='email' name="email" placeholder='Enter your email address' />
+      <label for="phone">Phone Number</label>
+      <input id='phone' type='text' name='phone' placeholder='Enter your phone number' />
+      </form>
     </div>
   )
 }

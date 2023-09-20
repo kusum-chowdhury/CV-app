@@ -1,0 +1,28 @@
+.input-general-info{
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+form {
+    width: 100%;
+    overflow: hidden;
+}
+input {
+    width: 100%;
+    display: block;
+    height: 40px;
+    border: none;
+    padding-left: 1rem;
+    background-color: aliceblue;
+    border-radius: 5px;
+    margin-top: 5px;
+    margin-bottom: 15px;
+}
+label {
+    font-weight: bold;
+    font-family: 'Lato', sans-serif; 
+}
+h3 {
+    font-size: 1.7rem;
+}

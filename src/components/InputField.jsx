@@ -5,8 +5,7 @@ import InputGenInfo from './InputGenInfo'
 function InputField() {
   return (
     <div className='inputs'>
-      <h1>Input Field</h1>
-        {/* <InputGenInfo /> */}
+        <InputGenInfo />
     </div>
   )
 }
