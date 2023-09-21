@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .resume {
     background-color: white;
     width: 800px;
@@ -8,4 +9,22 @@
 .name {
     text-align: center;
     margin-top: 3rem;
+    font-family: 'Bree Serif', serif;
+    font-size: 2.5rem;
+    margin-bottom: 0;
+    color: rgb(93, 77, 77);
+}
+.email {
+    font-size: 1rem;
+    /* text-align: center; */
+}
+
+.emailPhone {
+    display: flex;
+   justify-content: center;
+   gap: 1rem;
+}
+hr{
+    width: 85%;
+    border: 1px solid rgb(167, 163, 163);
 }

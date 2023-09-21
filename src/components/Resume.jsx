@@ -4,8 +4,11 @@ function Resume(props) {
   return (
     <div className='resume'>
       <h3 className='name'>{props.name}</h3>
-      <p>{props.email}</p>
-      <p>{props.phone}</p>
+      <div className='emailPhone'>
+      <p className='email'>{props.email}</p>
+      <p className='phone'>{props.phone}</p>
+      </div>
+      <hr />
     </div>
   )
 }
