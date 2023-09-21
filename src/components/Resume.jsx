@@ -1,16 +1,13 @@
 import React from 'react'
 import '../styles/Resume.css'
-import Geninfo from './GenInfoField'
-import Education from './EducationField'
-import Experience from './ExperienceField'
-function Resume() {
+function Resume(props) {
   return (
     <div className='resume'>
-        {/* <Geninfo /> */}
-        {/* <Education /> */}
-        {/* <Experience /> */}
+      <h3 className='name'>{props.name}</h3>
+      <p>{props.email}</p>
+      <p>{props.phone}</p>
     </div>
   )
 }
-
+// name={name}
 export default Resume
