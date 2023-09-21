@@ -6,7 +6,6 @@ import Experience from './ExperienceField'
 function Resume() {
   return (
     <div className='resume'>
-      <h1>REsume</h1>
         {/* <Geninfo /> */}
         {/* <Education /> */}
         {/* <Experience /> */}

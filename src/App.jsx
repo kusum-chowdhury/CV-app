@@ -5,7 +5,7 @@ import SideBar from './components/SideBar'
 function App() {
 
   return (
-    <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: 0, margin: 0}}>
+    <div style={{ display: 'flex', justifyContent: 'space-between', padding: 0, margin: 0}}>
       <SideBar />
       <InputField />
       <Resume />
