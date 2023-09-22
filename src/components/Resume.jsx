@@ -9,6 +9,11 @@ function Resume(props) {
       <p className='phone'>{props.phone}</p>
       </div>
       <hr />
+      <h4>Education</h4>
+      <p>{props.degree}</p>
+      <p>{props.school}</p>
+      <p>{props.start}</p>
+      <p>{props.end}</p>
     </div>
   )
 }

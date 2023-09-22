@@ -10,8 +10,15 @@ function InputField(props) {
         <InputGenInfo
          changeName={props.changeName} 
          changeEmail={props.changeEmail} 
-         changePhone={props.changePhone} />
-        <InputEducation />
+         changePhone={props.changePhone}
+        
+         />
+        <InputEducation
+         changeDegree={props.changeDegree}
+         changeSchool={props.changeSchool}
+         changeStartDate={props.changeStartDate}
+         changeEndDate={props.changeEndDate}
+          />
         <InputWorkExperience />
     </div>
   )

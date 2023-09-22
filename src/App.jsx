@@ -9,6 +9,11 @@ function App() {
 const [name, setName] = useState("");
 const [email, setEmail] = useState("");
 const [phone, setPhone] = useState("");
+const [degree, setDegree] = useState("");
+const [school, setSchool] = useState("");
+const [start, setStart] = useState("");
+const [end, setEnd] = useState("");
+
 
 //for changing and entering the name in the resume
 const changeName = (inputValue)=> {
@@ -25,6 +30,23 @@ const changeEmail = (inputValue) => {
 const changePhone = (inputValue) => {
   setPhone(inputValue);
 };
+
+const changeDegree = (inputValue) => {
+  setDegree(inputValue);
+};
+
+const changeSchool = (inputValue) => {
+  setSchool(inputValue);
+};
+
+const changeStartDate = (inputValue) => {
+  setStart(inputValue);
+};
+
+const changeEndDate = (inputValue) => {
+  setEnd(inputValue);
+};
+
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between', padding: 0, margin: 0}}>
       <SideBar />
@@ -32,13 +54,21 @@ const changePhone = (inputValue) => {
       <InputField 
       changeName={changeName} 
       changeEmail={changeEmail} 
-      changePhone={changePhone} 
+      changePhone={changePhone}
+      changeDegree={changeDegree}
+      changeSchool={changeSchool} 
+      changeStartDate={changeStartDate}
+      changeEndDate={changeEndDate}
       />
       {/* lifting the state up */}
       <Resume 
       name={name}
       email={email}
       phone={phone}
+      degree={degree}
+      school={school}
+      start={start}
+      end={end}
       />
     </div>
   )

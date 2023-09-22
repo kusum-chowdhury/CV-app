@@ -1,10 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
 .resume {
     background-color: white;
-    width: 800px;
+    width: 700px;
     height: 1000px;
     margin-right: 1rem;
     border-radius: 10px;
+    padding-left: 4rem;
+    padding-right: 4rem;
 }
 .name {
     text-align: center;
@@ -27,4 +29,10 @@
 hr{
     width: 85%;
     border: 1px solid rgb(167, 163, 163);
+}
+h4 {
+    margin: 0;
+    margin-top: 2rem;
+    color: rgb(93, 77, 77);
+    font-size: 1.2rem;
 }
