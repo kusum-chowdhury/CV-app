@@ -19,7 +19,13 @@ function InputField(props) {
          changeStartDate={props.changeStartDate}
          changeEndDate={props.changeEndDate}
           />
-        <InputWorkExperience />
+        <InputWorkExperience 
+        changeJob={props.changeJob}
+        changeCompany={props.changeCompany}
+        changeStartDate1={props.changeStartDate1}
+        changeEndDate1={props.changeEndDate1}
+        changeDescription={props.changeDescription}
+        />
     </div>
   )
 }

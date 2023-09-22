@@ -13,6 +13,12 @@ const [degree, setDegree] = useState("");
 const [school, setSchool] = useState("");
 const [start, setStart] = useState("");
 const [end, setEnd] = useState("");
+const [job, setJob] = useState("");
+const [company, setCompany] = useState("");
+const [start1, setStart1] = useState("");
+const [end1, setEnd1] = useState("");
+const [description, setDescription] = useState("");
+
 
 
 //for changing and entering the name in the resume
@@ -46,6 +52,25 @@ const changeStartDate = (inputValue) => {
 const changeEndDate = (inputValue) => {
   setEnd(inputValue);
 };
+const changeJob = (inputValue) => {
+  setJob(inputValue);
+};
+
+const changeCompany = (inputValue) => {
+  setCompany(inputValue);
+};
+const changeStartDate1 = (inputValue) => {
+  setStart1(inputValue);
+};
+
+const changeEndDate1 = (inputValue) => {
+  setEnd1(inputValue);
+};
+
+const changeDescription = (inputValue) => {
+  setDescription(inputValue);
+};
+
 
   return (
     <div style={{ display: 'flex', justifyContent: 'space-between', padding: 0, margin: 0}}>
@@ -59,6 +84,11 @@ const changeEndDate = (inputValue) => {
       changeSchool={changeSchool} 
       changeStartDate={changeStartDate}
       changeEndDate={changeEndDate}
+      changeJob={changeJob}
+      changeCompany={changeCompany}
+      changeStartDate1={changeStartDate1}
+      changeEndDate1={changeEndDate1}
+      changeDescription={changeDescription}
       />
       {/* lifting the state up */}
       <Resume 
@@ -69,6 +99,11 @@ const changeEndDate = (inputValue) => {
       school={school}
       start={start}
       end={end}
+      job={job}
+      company={company}
+      start1={start1}
+      end1={end1}
+      description={description}
       />
     </div>
   )

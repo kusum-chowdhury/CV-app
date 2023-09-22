@@ -36,7 +36,7 @@ h4 {
     color: rgb(93, 77, 77);
     font-size: 1.2rem;
 }
-.education{
+.education, .work-exp{
     margin-left: 2rem;
 }
 .education p {
@@ -47,7 +47,7 @@ h4 {
 .education .degree {
     text-transform: uppercase;
 }
-.education .date {
+ .date {
     display: inline;
     font-weight: normal;
 }

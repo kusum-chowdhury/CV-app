@@ -16,6 +16,14 @@ function Resume(props) {
       <p className='date'>{props.start}</p>
       <p className='date'> - {props.end}</p>
       </div>
+      <h4>Work Experience</h4>
+      <div className='work-exp'>
+      <p>{props.job}</p>
+      <p>{props.company}</p>
+      <p className='date'>{props.start1}</p>
+      <p className='date'> - {props.end1}</p>
+      <p>{props.description}</p>
+      </div>
     </div>
   )
 }
