@@ -35,17 +35,26 @@ h4 {
     margin-top: 2rem;
     color: rgb(93, 77, 77);
     font-size: 1.2rem;
+    text-transform: uppercase;
 }
 .education, .work-exp{
     margin-left: 2rem;
 }
 .education p {
-    font-weight: 500;
+  
     line-height: 10px;
-    text-transform: capitalize;
+    
 }
-.education .degree {
+p{
+    color: rgb(36, 30, 30);
+}
+.upper-case {
     text-transform: uppercase;
+    font-weight: 500;;
+}
+.cap {
+    text-transform: capitalize;
+    font-weight: 500;;
 }
  .date {
     display: inline;
