@@ -36,3 +36,18 @@ h4 {
     color: rgb(93, 77, 77);
     font-size: 1.2rem;
 }
+.education{
+    margin-left: 2rem;
+}
+.education p {
+    font-weight: 500;
+    line-height: 10px;
+    text-transform: capitalize;
+}
+.education .degree {
+    text-transform: uppercase;
+}
+.education .date {
+    display: inline;
+    font-weight: normal;
+}

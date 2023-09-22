@@ -10,10 +10,12 @@ function Resume(props) {
       </div>
       <hr />
       <h4>Education</h4>
-      <p>{props.degree}</p>
+      <div className='education'>
+      <p className='degree'>{props.degree}</p>
       <p>{props.school}</p>
-      <p>{props.start}</p>
-      <p>{props.end}</p>
+      <p className='date'>{props.start}</p>
+      <p className='date'> - {props.end}</p>
+      </div>
     </div>
   )
 }
