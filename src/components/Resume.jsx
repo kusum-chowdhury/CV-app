@@ -1,8 +1,36 @@
 import React from 'react'
 import '../styles/Resume.css'
+import { useRef } from 'react'
+import html2canvas from 'html2canvas'
+import jsPDF from 'jspdf'
 function Resume(props) {
+
+const pdfRef = useRef();
+
+const downloadPDF = () => {
+  const input = pdfRef.current;
+  html2canvas(input).then((canvas)=> {
+    const imgData = canvas.toDataURL('image/png');
+    const pdf = new jsPDF('p', 'mm', 'a4', true);
+    const pdfWidth = pdf.internal.pageSize.getWidth();
+    const pdfHeight = pdf.internal.pageSize.getHeight();
+    const imgWidth = canvas.width;
+    const imgHeight = canvas.height;
+    const ratio = Math.min(pdfWidth / imgWidth, pdfHeight / imgHeight);
+    const imgX = (pdfWidth - imgWidth * ratio) /2;
+    const imgY = 30;
+    pdf.addImage(imgData, 'PNG', imgX, imgY, imgWidth * ratio, imgHeight * ratio);
+    pdf.save('Resume.pdf');
+  })
+}
+
+
   return (
-    <div className='resume'>
+    <div>
+      <div className='download-btn'>
+        <button className='download' onClick={downloadPDF} >Downlaod PDF</button>
+      </div>
+    <div className='resume' ref={pdfRef}>
       <h3 className='name'>{props.name}</h3>
       <div className='emailPhone'>
       <p className='email'>{props.email}</p>
@@ -25,7 +53,8 @@ function Resume(props) {
       <p>{props.description}</p>
       </div>
     </div>
+    </div>
   )
 }
-// name={name}
+
 export default Resume

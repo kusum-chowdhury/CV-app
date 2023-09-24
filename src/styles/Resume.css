@@ -7,6 +7,7 @@
     border-radius: 10px;
     padding-left: 4rem;
     padding-right: 4rem;
+    padding-top: .5rem
 }
 .name {
     text-align: center;
@@ -59,4 +60,25 @@ p{
  .date {
     display: inline;
     font-weight: normal;
+}
+
+.download-btn {
+    background-color: white;
+    margin-bottom: 10px;
+    width: 810px;
+    padding: .5rem;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    border-radius: 10px;
+}
+.download {
+    background-color: brown;
+    border: none;
+    padding: 10px 15px;
+    font-weight: bold;
+    color: white;
+    font-family: 'Bree Serif', serif;
+    border-radius: 10px;
+    
 }
